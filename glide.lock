@@ -137,7 +137,7 @@ imports:
 - name: github.com/golang/net
 - name: github.com/golang/text
 - name: github.com/golang/tools
-- name: golang.org/x/sys
+- name: github.com/golang/sys
 - name: github.com/tendermint/merkleeyes
   version: a0e73e1ac3e18e12a007520a4ea2c9822256e307
   subpackages:
