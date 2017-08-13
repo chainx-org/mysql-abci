@@ -2,5 +2,11 @@ get_vendor_deps:
 	@ go get github.com/Masterminds/glide
 	@ glide install
 
-build:
+build: copy
 	@ go build -i github.com/mysql-abci/cmd/mysql-abci/...
+
+copy:
+	cp -r vendor/github.com/golang/crypto vendor/golang.org/x/crypto
+	cp -r vendor/github.com/golang/net vendor/golang.org/x/net
+	cp -r vendor/github.com/golang/text vendor/golang.org/x/text
+	cp -r vendor/github.com/golang/tools vendor/golang.org/x/tools
